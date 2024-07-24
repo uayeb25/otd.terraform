@@ -27,3 +27,15 @@ variable "password"{
     type = string
     sensitive = true
 }
+
+variable "postgres_admin_password"{
+    description = "postgres password"
+    type = string
+    sensitive = true
+}
+
+variable "postgres_admin_username"{
+    description = "postgres username"
+    type = string
+    default = "postgres"
+}
